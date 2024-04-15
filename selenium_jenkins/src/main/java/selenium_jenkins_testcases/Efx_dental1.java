@@ -32,6 +32,6 @@ public class Efx_dental1 {
         // Close the browser
         driver.quit();
         
-        //Awais Hamid 745
+        //Awais Hamid 74501
     }
 }
