@@ -52,4 +52,7 @@ public class Efx_dental_DentalSupplies_Export {
         System.out.println("Test completed. Closing the browser...");
         driver.quit();
     }  
-}
+        
+        //Awais Hamid
+	
+    }
