@@ -40,7 +40,7 @@ public class Efx_dental_DentalSupplies_Export {
         // Clicking on menu items
         System.out.println("Clicking on menu items...");
         driver.findElement(By.xpath("//*[@id=\"root\"]/div[1]/div[1]/div[4]/ul[1]/li[1]")).click();
-        driver.findElement(By.xpath("//a[@class='d-flex align-items-center active']//span[@class='menu-item text-truncate font-family'][normalize-space()='Submission Listing']")).click();
+        driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[4]/ul[1]/li[1]/ul/div[2]/li[3]/a")).click();
         Thread.sleep(10000);
         
         // Clicking on export button
