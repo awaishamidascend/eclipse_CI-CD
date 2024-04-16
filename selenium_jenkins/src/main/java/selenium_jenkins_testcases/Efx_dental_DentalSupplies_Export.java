@@ -1,0 +1,42 @@
+package selenium_jenkins_testcases;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Efx_dental_DentalSupplies_Export {
+
+    public static void main(String[] args) throws InterruptedException {
+        // Setup WebDriver
+        WebDriverManager.chromedriver().setup();
+        
+        // Create a new instance of ChromeDriver
+        WebDriver driver = new ChromeDriver();
+        
+        // Open the webpage
+        driver.get("https://efficax-dental.ascend.com.sa/");
+        
+        // Wait for 10 seconds to allow the page to load fully
+            Thread.sleep(10000);
+       
+        // Maximize the browser window
+        driver.manage().window().maximize();
+        
+        driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("rida.khan@ascend.com.sa");
+        driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("eod777");
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
+        Thread.sleep(10000);
+        driver.findElement(By.xpath("//*[@id=\"root\"]/div[1]/div[1]/div[4]/ul[1]/li[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"root\"]/div[1]/div[1]/div[4]/ul[1]/li[1]/ul/div[2]/li[3]/a/span")).click();
+        Thread.sleep(10000);
+        driver.findElement(By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div[3]/div/div/div[1]/div[2]/button[1]")).click();
+        Thread.sleep(10000);
+        
+        
+        
+	
+	
+
+}
