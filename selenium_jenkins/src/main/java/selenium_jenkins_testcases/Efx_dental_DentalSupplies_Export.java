@@ -25,16 +25,25 @@ public class Efx_dental_DentalSupplies_Export {
         driver.manage().window().maximize();
         
         driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("rida.khan@ascend.com.sa");
+        System.out.print("step1");
         driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("eod777");
+        System.out.print("step2");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
+        System.out.print("step3");
         Thread.sleep(10000);
+        System.out.print("step4");
         driver.findElement(By.xpath("//*[@id=\"root\"]/div[1]/div[1]/div[4]/ul[1]/li[1]")).click();
+        System.out.print("step5");
         driver.findElement(By.xpath("//*[@id=\"root\"]/div[1]/div[1]/div[4]/ul[1]/li[1]/ul/div[2]/li[3]/a/span")).click();
+        System.out.print("step6");
         Thread.sleep(10000);
+        System.out.print("step7");
         driver.findElement(By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div[3]/div/div/div[1]/div[2]/button[1]")).click();
+        System.out.print("step8");
         Thread.sleep(10000);
-        
-        
+        System.out.print("step9");
+
+    }
         
 	
 	
