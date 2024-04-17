@@ -21,7 +21,6 @@ public class Efx_AmanExport {
         Thread.sleep(5000);
         String otp = "786786";
         // Find the OTP input field
-        //WebElement otpInput = driver.findElement(By.xpath("//input[@aria-label='Please enter OTP character 1']"));
         // Loop through each digit of the OTP and enter it into the input field
         for (int i = 0; i < otp.length(); i++) {
             char digit = otp.charAt(i);
@@ -34,12 +33,11 @@ public class Efx_AmanExport {
         //OTP Login Button
         driver.findElement(By.xpath("//button[@type='submit']")).click();
         System.out.print("OTP logged in successfully");
-        Thread.sleep(50000);
+        Thread.sleep(5000);
         System.out.print("Wait statement executed successfully");
 
         
-       // driver.findElement(By.xpath("//span[contains(@class,'menu-item text-truncate')][normalize-space()='Users']")).click();
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/img[1]")).click();
+        driver.findElement(By.xpath("(//img)[8]")).click();
        // Thread.sleep(50000);
        // driver.findElement(By.xpath("//span[contains(@class,'menu-item text-truncate')][normalize-space()='Regions']")).click();
         //driver.findElement(By.xpath("//div[@id='export']//div//img")).click();
