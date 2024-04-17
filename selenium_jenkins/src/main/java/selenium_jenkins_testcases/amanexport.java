@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Efx_Aman {
+public class amanexport {
 	public static void main(String[] args) throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();
@@ -18,7 +18,7 @@ public class Efx_Aman {
         driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("system@ascend.com");
         driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("eod777");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
-        Thread.sleep(50000);
+        Thread.sleep(5000);
         String otp = "786786";
         // Find the OTP input field
         //WebElement otpInput = driver.findElement(By.xpath("//input[@aria-label='Please enter OTP character 1']"));
@@ -31,7 +31,26 @@ public class Efx_Aman {
             WebElement otpBox = driver.findElement(By.xpath(xpath));
             otpBox.sendKeys(digitAsString);
         }
+        //OTP Login Button
         driver.findElement(By.xpath("//button[@type='submit']")).click();
+        System.out.print("OTP logged in successfully");
+        Thread.sleep(50000);
+        System.out.print("Wait statement executed successfully");
+
+        
+       // driver.findElement(By.xpath("//span[contains(@class,'menu-item text-truncate')][normalize-space()='Users']")).click();
+        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/img[1]")).click();
+       // Thread.sleep(50000);
+       // driver.findElement(By.xpath("//span[contains(@class,'menu-item text-truncate')][normalize-space()='Regions']")).click();
+        //driver.findElement(By.xpath("//div[@id='export']//div//img")).click();
+        //Thread.sleep(50000);
+        //driver.findElement(By.xpath("//span[@class='menu-item text-truncate'][normalize-space()='Sites']")).click();
+        //driver.findElement(By.xpath("//div[@id='export']//div//img")).click();
+        //Thread.sleep(50000);
+       
+        
+
+        
+      
 
     }}
-
