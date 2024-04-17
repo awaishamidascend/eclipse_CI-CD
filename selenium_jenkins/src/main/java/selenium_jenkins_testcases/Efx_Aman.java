@@ -32,12 +32,7 @@ public class Efx_Aman {
             otpBox.sendKeys(digitAsString);
         }
         driver.findElement(By.xpath("//button[@type='submit']")).click();
-<<<<<<< HEAD
 
-    }}
 
-=======
-//Awais 123
     }
 	}
->>>>>>> branch 'master' of https://github.com/awaishamidascend/eclipse_CI-CD.git
