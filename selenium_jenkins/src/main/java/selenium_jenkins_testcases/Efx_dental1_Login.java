@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Efx_dental1 {
+public class Efx_dental1_Login {
 
     public static void main(String[] args) throws InterruptedException {
         // Setup WebDriver
@@ -31,7 +31,7 @@ public class Efx_dental1 {
         
         // Close the browser
         driver.quit();
+        //rida test
         
-        //Awais Hamid 12345
     }
 }
