@@ -22,17 +22,18 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
+        <!-- Replace these dependencies with valid ones -->
+        <!-- <dependency>
             <groupId>ascend.com.sa</groupId>
             <artifactId>Automate</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+        </dependency> -->
 
-        <dependency>
+        <!-- <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.1.0</version>
-        </dependency>
+        </dependency> -->
 
         <dependency>
             <groupId>com.aventstack</groupId>
@@ -42,9 +43,10 @@
     </dependencies>
 
     <repositories>
+        <!-- Use the correct Maven repository URL -->
         <repository>
             <id>central</id>
-            <url>https://github.com/awaishamidascend/eclipse_CI-CD.git</url>
+            <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
         <!-- Add your correct snapshot repository here if needed -->
     </repositories>
