@@ -21,13 +21,18 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
-
+<groupId>test</groupId>
+    <artifactId>automate</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+        <!-- Replace ascend.com.sa:Automate with correct groupId and artifactId -->
         <dependency>
             <groupId>ascend.com.sa</groupId>
             <artifactId>Automate</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!-- Replace org.seleniumhq.selenium:selenium-java with correct version -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -41,11 +46,4 @@
         </dependency>
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://github.com/awaishamidascend/ascend_sqa.git</url>
-        </repository>
-        <!-- Add your correct snapshot repository here if needed -->
-    </repositories>
 </project>
