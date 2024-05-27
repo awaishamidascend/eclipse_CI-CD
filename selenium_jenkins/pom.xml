@@ -24,12 +24,12 @@
     	<version>0.0.1-SNAPSHOT</version>
     </dependency>
     
-    <dependency>
-    	<groupId>selenium4</groupId>
-    	<artifactId>org.selenium</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
-    </dependency>
-    
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.1.0</version>
+</dependency>
+
     <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
