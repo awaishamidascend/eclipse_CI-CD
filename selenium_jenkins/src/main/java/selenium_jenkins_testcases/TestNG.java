@@ -15,7 +15,9 @@ public class TestNG {
 
     @BeforeTest
     public void setUpTest() {
+        // Set up WebDriverManager
         WebDriverManager.chromedriver().setup();
+        // Initialize ChromeDriver
         driver = new ChromeDriver();
     }
 
