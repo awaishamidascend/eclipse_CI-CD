@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium_jenkins_testcases.TestNG">
+      <class name="selenium_jenkins_testcases.TestNG_BlazeMeter">
         <methods>
-          <include name="tearDownTest"/>
-          <include name="googleSearch"/>
-          <include name="setUpTest"/>
+          <include name="setUp"/>
+          <include name="testTestNG_BlazeMeter"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- selenium_jenkins_testcases.TestNG -->
+      </class> <!-- selenium_jenkins_testcases.TestNG_BlazeMeter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

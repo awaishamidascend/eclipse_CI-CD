@@ -2,32 +2,46 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-27T15:13:57 PKT" name="Default suite" finished-at="2024-05-27T15:13:57 PKT" duration-ms="41">
+  <suite started-at="2024-06-02T12:20:36 PKT" name="Default suite" finished-at="2024-06-02T12:20:38 PKT" duration-ms="1943">
     <groups>
     </groups>
-    <test started-at="2024-05-27T15:13:57 PKT" name="Default test" finished-at="2024-05-27T15:13:57 PKT" duration-ms="41">
-      <class name="selenium_jenkins_testcases.TestNG">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:selenium_jenkins_testcases.TestNG@4d1bf319]" started-at="2024-05-27T15:13:57 PKT" name="setUpTest" finished-at="2024-05-27T15:13:57 PKT" duration-ms="7" status="FAIL">
-          <exception class="java.lang.Error">
+    <test started-at="2024-06-02T12:20:36 PKT" name="Default test" finished-at="2024-06-02T12:20:38 PKT" duration-ms="1943">
+      <class name="selenium_jenkins_testcases.TestNG_BlazeMeter">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:selenium_jenkins_testcases.TestNG_BlazeMeter@4d0d9fe7]" started-at="2024-06-02T12:20:36 PKT" name="setUp" finished-at="2024-06-02T12:20:38 PKT" duration-ms="1898" status="FAIL">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
             <message>
-              <![CDATA[Unresolved compilation problem: 
-WebDriverManager cannot be resolved
-]]>
+              <![CDATA[Unable to establish websocket connection to http://localhost:65281/devtools/browser/c3162987-f15e-4f49-bfdd-8578512917cc
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'AWAIS-OFFICE-LA', ip: '192.16.19.194', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problem: 
-WebDriverManager cannot be resolved
-
-at selenium_jenkins_testcases.TestNG.setUpTest(TestNG.java:18)
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:65281/devtools/browser/c3162987-f15e-4f49-bfdd-8578512917cc
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'AWAIS-OFFICE-LA', ip: '192.16.19.194', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:104)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:116)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
+at selenium_jenkins_testcases.TestNG_BlazeMeter.setUp(TestNG_BlazeMeter.java:20)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -43,31 +57,45 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="googleSearch()[pri:0, instance:selenium_jenkins_testcases.TestNG@4d1bf319]" started-at="2024-05-27T15:13:57 PKT" name="googleSearch" finished-at="2024-05-27T15:13:57 PKT" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Error">
+        </test-method> <!-- setUp -->
+        <test-method signature="testTestNG_BlazeMeter()[pri:0, instance:selenium_jenkins_testcases.TestNG_BlazeMeter@4d0d9fe7]" started-at="2024-06-02T12:20:38 PKT" name="testTestNG_BlazeMeter" finished-at="2024-06-02T12:20:38 PKT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
             <message>
-              <![CDATA[Unresolved compilation problem: 
-WebDriverManager cannot be resolved
-]]>
+              <![CDATA[Unable to establish websocket connection to http://localhost:65281/devtools/browser/c3162987-f15e-4f49-bfdd-8578512917cc
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'AWAIS-OFFICE-LA', ip: '192.16.19.194', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problem: 
-WebDriverManager cannot be resolved
-
-at selenium_jenkins_testcases.TestNG.setUpTest(TestNG.java:18)
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:65281/devtools/browser/c3162987-f15e-4f49-bfdd-8578512917cc
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'AWAIS-OFFICE-LA', ip: '192.16.19.194', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:104)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:116)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
+at selenium_jenkins_testcases.TestNG_BlazeMeter.setUp(TestNG_BlazeMeter.java:20)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -83,15 +111,50 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- googleSearch -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:selenium_jenkins_testcases.TestNG@4d1bf319]" started-at="2024-05-27T15:13:57 PKT" name="tearDownTest" finished-at="2024-05-27T15:13:57 PKT" duration-ms="0" status="SKIP">
+        </test-method> <!-- testTestNG_BlazeMeter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium_jenkins_testcases.TestNG_BlazeMeter@4d0d9fe7]" started-at="2024-06-02T12:20:38 PKT" name="tearDown" finished-at="2024-06-02T12:20:38 PKT" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+at selenium_jenkins_testcases.TestNG_BlazeMeter.tearDown(TestNG_BlazeMeter.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassConfigurations(TestMethodWorker.java:238)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:223)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:137)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownTest -->
-      </class> <!-- selenium_jenkins_testcases.TestNG -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- selenium_jenkins_testcases.TestNG_BlazeMeter -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
