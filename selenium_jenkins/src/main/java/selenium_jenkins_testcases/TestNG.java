@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -17,8 +18,16 @@ public class TestNG {
     public void setUpTest() {
         // Set up WebDriverManager
         WebDriverManager.chromedriver().setup();
+        
+        // Set Chrome options
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--disable-web-security");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        
         // Initialize ChromeDriver
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
     }
 
     @Test
@@ -33,8 +42,10 @@ public class TestNG {
 
     @AfterTest
     public void tearDownTest() {
-        // Close browser
-        driver.quit();
-        System.out.println("Test Completed Successfully");
+        if (driver != null) {
+            // Close browser
+            driver.quit();
+            System.out.println("Test Completed Successfully");
+        }
     }
 }

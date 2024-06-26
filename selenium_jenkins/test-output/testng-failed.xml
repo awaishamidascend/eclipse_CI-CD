@@ -6,8 +6,8 @@
       <class name="selenium_jenkins_testcases.TestNG_BlazeMeter">
         <methods>
           <include name="setUp"/>
-          <include name="testTestNG_BlazeMeter"/>
           <include name="tearDown"/>
+          <include name="testBlazeMeter"/>
         </methods>
       </class> <!-- selenium_jenkins_testcases.TestNG_BlazeMeter -->
     </classes>
