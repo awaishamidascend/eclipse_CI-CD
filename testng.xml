@@ -2,7 +2,7 @@
 <suite name="Suite">
     <test name="Test">
         <classes>
-            <class name="com.example.MyTestClass"/>
+            <class name="TestNG"/>
         </classes>
     </test>
 </suite>
